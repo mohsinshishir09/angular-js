@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content ="IE-edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+
+	<title>Angular JS - TutorialsPoint</title>
+
+	<!-- CSS from cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- CSS custom -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- <pre>Hello</pre>
+	<code>Hello</code>
+	<samp>Hello</samp> -->
+	
+
+	<div class="myApp" ng-app="myApp" ng-controller="myController">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h4><b>1.</b> Single-way variable binding</h4>
+					<b>ng-bind:</b><span class="myName" ng-bind="myName"></span>
+					<br>
+					<b>expression:</b><span class="myName">{{ myName }}</span>
+				</div>
+
+				<div class="col-sm-6">
+					<h4><b>2.</b> Two-way model binding</h4>
+					<input type="text" class="form-control" placeholder="Enter your name" ng-model="myName_2">
+					<b>ng-bind:</b><span class="myName_2" ng-bind="myName_2"></span>
+					<br>
+					<b>expression:</b><span class="myName_2">{{ myName_2 }}</span>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!-- JS from CDN -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Angular JS CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+
+
+
+	<!-- JS custom -->
+	<script src="js/main.js"></script>
+	<script src="js/myApp.js"></script>
+	<script src="js/myController.js"></script>
+</body>
+
+</html>
